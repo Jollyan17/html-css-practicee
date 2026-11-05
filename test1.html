@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxpayer Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- [خانة 1]: الهيدر والقائمة العلوية -->
+        <header class="portal-section header-box">
+            <h1 class="portal-title">Taxpayer Portal</h1>
+            <p class="subtitle">Online Tax Services</p>
+            <nav class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">Tax Filing</a>
+                <a href="#">Payments</a>
+                <a href="#">Support</a>
+                <a href="#">About</a>
+            </nav>
+            <div class="search-box">
+                <label for="search">Search the portal</label>
+                <div class="search-input-group">
+                    <input type="text" id="search" placeholder="e.g. VAT return">
+                    <button>Search</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- [خانة 2]: رسالة الترحيب والتعليمات الأساسية -->
+        <section class="portal-section welcome-box">
+            <h2 class="welcome-title">Welcome to the Portal</h2>
+            <p class="welcome-desc">
+                This online system allows registered taxpayers to <strong>file returns</strong>, <strong>manage payments</strong>, and <strong>track submissions</strong> online. The portal is designed to simplify communication between taxpayers and the tax authority.
+            </p>
+            <p class="welcome-desc">
+                Use the navigation menu above to explore filing options, review your payment history, or contact support if you need assistance. 
+                <mark>New users must verify their email before submitting a first return.</mark>
+            </p>
+            <p class="welcome-desc filing-types">
+                Filing types include 
+                <abbr title="Value Added Tax">VAT</abbr>, 
+                <abbr title="Corporate Income Tax">CIT</abbr>, and 
+                <abbr title="Personal Income Tax">PIT</abbr>.
+            </p>
+        </section>
+
+        <!-- [خانة 3]: الشكل التوضيحي (صورة لوحة التحكم) -->
+        <section class="portal-section image-box">
+            <figure class="dashboard-figure">
+                <img src="dashboard.png" alt="Taxpayer Dashboard Overview" class="responsive-dashboard-img">
+                <figcaption class="figure-caption">Figure 1: Overview of the taxpayer dashboard</figcaption>
+            </figure>
+        </section>
+
+        <!-- [خانة 4]: الإعلان والبيان المقتبس -->
+        <section class="portal-section announcement-box">
+            <h3 class="section-title">Announcement: VAT Filing Deadline Extended</h3>
+            <p class="announcement-text">
+                The deadline for quarterly VAT filing has been extended by two weeks to accommodate the recent system maintenance window.
+            </p>
+            <blockquote cite="Portal Communications Team">
+                All pending VAT submissions will now be accepted until the end of the month without penalty.
+            </blockquote>
+            <p class="announcement-meta">Source: <cite>Portal Communications Team</cite></p>
+            <p class="announcement-meta">Published: <time datetime="2026-07-20">20 July 2026</time></p>
+        </section>
+
+        <!-- [خانة 5]: جدول الحالات والتقارير الحالية -->
+        <section class="portal-section recent-filings-box">
+            <h3 class="section-title">Recent Filing Types</h3>
+            <p class="sub-section-title">Filing status for the current period</p>
+            
+            <table class="filings-table">
+                <thead>
+                    <tr>
+                        <th>Tax Type</th>
+                        <th>Filing Period</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>VAT</strong></td>
+                        <td>Q2 2026</td>
+                        <td>Submitted</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CIT</strong></td>
+                        <td>2025 Annual</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PIT</strong></td>
+                        <td>2025 Annual</td>
+                        <td>Draft</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="metrics-container">
+                <div class="metric-item">
+                    <span class="metric-label">Overall filing completion this quarter:</span>
+                    <progress value="70" max="100"></progress>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-label">Average review score for submitted filings:</span>
+                    <meter value="8" min="0" max="10"></meter>
+                </div>
+            </div>
+        </section>
+
+        <!-- [خانة 6]: الروابط السريعة المرقّمة -->
+        <section class="portal-section quick-links-box">
+            <h3 class="section-title">Quick Links</h3>
+            <ol class="ordered-links-list">
+                <li><a href="#">How to file a VAT return</a></li>
+                <li><a href="#">Payment methods accepted</a></li>
+                <li><a href="#">Download tax certificates</a></li>
+                <li><a href="#">Contact a support agent</a></li>
+            </ol>
+        </section>
+
+        <!-- [خانة 7]: المصطلحات التعريفية الرئيسية -->
+        <section class="portal-section key-terms-box">
+            <h3 class="section-title">Key Terms</h3>
+            <dl class="terms-description-list">
+                <dt>VAT</dt>
+                <dd>A tax added to most goods and services at the point of sale.</dd>
+                
+                <dt>Filing Period</dt>
+                <dd>The date range a given return or payment covers.</dd>
+            </dl>
+        </section>
+
+        <!-- [خانة 8]: الأسئلة الشائعة القابلة للفتح والإغلاق -->
+        <section class="portal-section faq-box">
+            <h3 class="section-title">Frequently Asked Questions</h3>
+            <details class="faq-item">
+                <summary>What happens if I miss a filing deadline?</summary>
+                <p class="faq-answer">Late submissions may be subject to administrative penalties or fines as outlined by the tax authority regulations.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Can I edit a submitted return?</summary>
+                <p class="faq-answer">Yes, you can file an amended return within the permitted timeframe if you need to correct errors in your original submission.</p>
+            </details>
+        </section>
+
+        <!-- [خانة 9]: الفوتر وتذييل الصفحة (بيانات التواصل والحقوق) -->
+        <footer class="portal-section footer-box">
+            <p class="copyright"><small>&copy; <time datetime="2026">2026</time> Taxpayer Portal. All rights reserved.</small></p>
+            <p class="footer-contact">
+                Support: <a href="mailto:support@example.com">support@example.com</a> | Phone: <a href="tel:+96812345678">+968 1234 5678</a>
+            </p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
+<!-- مربوطه مع style.css -->
