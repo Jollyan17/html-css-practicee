@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxpayer Portal</title>
+</head>
+<body>
+    <header>
+        <section>
+            <h2>Taxpayer Portal</h2>
+            <p>Online Tax Services</p>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Tax Filing</a>
+                <a href="#">Payments</a>
+                <a href="#">Support</a>
+                <a href="#">About</a>
+            </nav>
+            <br>
+            <form>
+                <div>
+                    <label for="search">Search the portal</label>
+                    <br>
+                    <input type="text" id="search" placeholder="e.g. VAT return">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+        </section> 
+    </header>
+    <br><hr><br>
+    <main>
+        <section>
+            <h2>Tax Filing Practice</h2>
+            <p>Work through the forms in order. They begin with basic text inputs and finish with a more complete tax return.</p>
+            <p><strong>Learning goal:</strong> notice how labels, names, values, validation, and grouped controls work together.</p>
+        </section>
+        <br><hr><br>
+        <section>
+            <h2>1. Taxpayer Contact</h2>
+            <p>A simple form using text, email, telephone, and submit controls.</p>
+            
+            <form>
+                <div>
+                    <label for="full-name">Full name</label>
+                    <br>
+                    <input type="text" id="full-name" name="fullName">
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email address</label>
+                    <br>
+                    <input type="email" id="email" name="emailAddress">
+                </div>
+                <br>
+                <div>
+                    <label for="telephone">Telephone</label>
+                    <br>
+                    <input type="tel" id="telephone" name="phone" placeholder="+968 1234 5678">
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Save contact</button>
+                </div>
+            </form>
+        </section>
+        <br><hr><br>
+        <section>
+            <h2>2. Choose a Return</h2>
+            <p>This form adds select menus, dates, radio buttons, and grouped controls.</p>
+            <form>            
+                   <h4>Filing details</h4>
+                    <div>
+                        <label for="tax-type">Tax type</label>
+                        <br>
+                        <select id="tax-type" name="taxType">
+                            <option value="">Choose a tax type</option>
+                            <option value="vat">VAT</option>
+                            <option value="income">Income Tax</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="period-ending">Period ending</label>
+                        <br>
+                        <input type="date" id="period-ending" name="periodEnding">
+                    </div>
+                <br>
+                    <h4>Return frequency</h4>
+                    <div>
+                        <input type="radio" id="monthly" name="frequency" value="monthly">
+                        <label for="monthly">Monthly</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="quarterly" name="frequency" value="quarterly">
+                        <label for="quarterly">Quarterly</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="annual" name="frequency" value="annual">
+                        <label for="annual">Annual</label>
+                    </div>
+                <br>
+                <div>
+                    <button type="submit">Continue</button>
+                </div>
+            </form>
+        </section>
+        <br><hr><br>
+        <section>
+            <h2>3. Income and Deductions</h2>
+            <p>This form introduces number inputs, a datalist, a range control, a textarea, and calculated output.</p>      
+            <form>
+                    <h3>Tax calculation</h3>
+                    <div>
+                        <label for="gross-income">Gross income (OMR)</label>
+                        <br>
+                        <input type="number" id="gross-income" name="grossIncome">
+                    </div>
+                    <br>
+                        <label for="allowable-deductions">Allowable deductions (OMR)</label>
+                        <br>
+                        <input type="number" id="allowable-deductions" name="allowableDeductions">
+                    </div>
+                <br>
+                <div>
+                    <label for="confidence">Confidence</label>
+                    <br>
+                    <input type="range" id="confidence" name="confidence" min="1" max="10">
+                    <br>
+                    <small style="color: gray;">Confidence in this estimate (1-10)</small>
+                </div>
+                <br>
+                <div>
+                    <label for="calculation-notes">Calculation notes</label>
+                    <br>
+                    <textarea id="calculation-notes" name="calculationNotes" rows="5" cols="40"></textarea>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Save calculation</button>
+                </div>
+            </form>
+        </section>
+        <br><hr><br>
+        <section>
+            <h2>4. Complete and Submit</h2>
+            <p>The final form combines document upload, checkboxes, month and time controls, a declaration, and reset and submit actions.</p>   
+            <form>
+                    <h4>Supporting records</h4>
+                    <div>
+                        <label for="accounting-month">Accounting month</label>
+                        <br>
+                        <input type="month" id="accounting-month" name="accountingMonth" >
+                    </div>
+                    <br>
+            <div>
+                <!-- <p style="margin: 0 0 5px 0;">Records included:</p> -->
+                
+                <div>
+                    <input type="checkbox" id="sales-invoices" name="records" value="sales_invoices">
+                    <label for="sales-invoices">Sales invoices</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="expense-receipts" name="records" value="expense_receipts">
+                    <label for="expense-receipts">Expense receipts</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="bank-statement" name="records" value="bank_statement">
+                    <label for="bank-statement">Bank statement</label>
+                </div>
+            </div>
+        <br>
+           <h3>Declaration</h3>
+            <div>
+                <label for="signature-name">Type your full name as a signature</label>
+                <br>
+                <input type="text" id="signature-name" name="signatureName">
+            </div>
+            <br>
+            <div>
+                <label for="time-signed">Time signed</label>
+                <br>
+                <input type="textarea" id="time-signed" name="timeSigned" >
+            </div>
+            <br>
+             <div>
+                <input type="checkbox" id="confirm-accuracy" name="confirmAccuracy" required>
+                <label for="confirm-accuracy">I confirm that the information in this practice return is accurate.</label>
+            </div>
+        <br>
+        <div>
+                    <button type="submit">Submit practice return</button>
+                     <button type="submit">Clear form</button>
+                </div>
+
+
+
+
+
+

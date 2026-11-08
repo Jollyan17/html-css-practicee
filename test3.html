@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test 3</title>
+</head>
+<header>
+
+</header>
+
+<body>
+   <section>
+    <h1>Tax Filing Practice</h1>
+<form action="/orders" method="POST">
+<h5></h5>
+  <fieldset>
+    <legend>Personal details</legend>
+
+    <label for="full-name">Full Name</label>
+    <br>
+    <input type="text" id="full-name" name="fullName" autocomplete="name" required>
+<br>
+    <label for="order-email">Email</label>
+    <br>
+    <input type="email" id="order-email" name="email" autocomplete="email" required>
+  </fieldset>
+<br>
+  <fieldset>
+
+    <legend>Payment details</legend>
+
+    <label for="order-amount">Amount (OMR)</label>
+    <br>
+    <input type="number" id="order-amount" name="amount" step="0.01" min="0" required>
+    
+    <small>Enter the amount in Omani Rials, up to two decimal places.</small>
+<br>
+<br>
+    <label for="tax-type">Tax Type</label>
+    <br>
+    <input type="text" id="tax-type" name="taxType" required>
+<br>
+  </fieldset>
+
+  <input type="checkbox" id="order-terms" name="terms" required>
+  <label for="order-terms">I confirm the information above is accurate</label>
+<br>
+  <button type="submit">Submit Payment</button>
+  <button type="reset">Clear Form</button>
+
+</form>
+   </section> 
+
+
+   
+                <h3>Declaration</h3>
+
+<!-- الصندوق الأول -->
+<fieldset style="border-radius: 6px; margin-bottom: 12px; border: 1px solid #ccc; padding: 12px;">
+  <label for="signature-name">Type your full name as a signature</label><br><br>
+  <input type="text" id="signature-name" name="signatureName" style="width: 100%;">
+</fieldset>
+
+<!-- الصندوق الثاني -->
+<fieldset style="border-radius: 6px; margin-bottom: 12px; border: 1px solid #ccc; padding: 12px;">
+  <label for="time-signed">Time signed</label><br><br>
+  <input type="text" id="time-signed" name="timeSigned" style="width: 100%;">
+</fieldset>
+
+<!-- الصندوق الثالث -->
+<fieldset style="border-radius: 6px; margin-bottom: 12px; border: 1px solid #ccc; padding: 12px;">
+  <input type="checkbox" id="confirm-accuracy" name="confirmAccuracy" required>
+  <label for="confirm-accuracy">I confirm that the information in this practice return is accurate.</label>
+</fieldset>
+
+<!-- الصندوق الرابع -->
+<fieldset style="border-radius: 6px; margin-bottom: 12px; border: 1px solid #ccc; padding: 12px;">
+  <button type="submit">Submit practice return</button>
+  <button type="button">Clear form</button>
+</fieldset>
+
+
+
+<!-- الصندوق الرئيسي الكبير (fieldset) -->
+<fieldset style="border: 2px solid #ccc; border-radius: 8px; padding: 20px; max-width: 500px;">
+  
+  <!-- عنوان الصندوق الرئيسي -->
+  <legend style="font-weight: bold; font-size: 1.2em; padding: 0 10px;">Declaration</legend>
+
+  <!-- الصندوق الداخلي الأول -->
+  <div style="border: 1px solid #ddd; padding: 12px; margin-bottom: 15px; border-radius: 6px;">
+    <label for="signature-name" style="display: block; margin-bottom: 8px;">Type your full name as a signature</label>
+    <input type="text" id="signature-name" name="signatureName" style="width: 100%; box-sizing: border-box;">
+  </div>
+
+  <!-- الصندوق الداخلي الثاني -->
+  <div style="border: 1px solid #ddd; padding: 12px; margin-bottom: 15px; border-radius: 6px;">
+    <label for="time-signed" style="display: block; margin-bottom: 8px;">Time signed</label>
+    <input type="text" id="time-signed" name="timeSigned" style="width: 100%; box-sizing: border-box;">
+  </div>
+
+  <!-- الصندوق الداخلي الثالث -->
+  <div style="border: 1px solid #ddd; padding: 12px; margin-bottom: 15px; border-radius: 6px;">
+    <input type="checkbox" id="confirm-accuracy" name="confirmAccuracy" required>
+    <label for="confirm-accuracy">I confirm that the information in this practice return is accurate.</label>
+  </div>
+
+  <!-- الصندوق الداخلي الرابع (الأزرار) -->
+  <div style="border: 1px solid #ddd; padding: 12px; border-radius: 6px;">
+    <button type="submit">Submit practice return</button>
+    <button type="button">Clear form</button>
+  </div>
+
+</fieldset>
+
+
+
+
+<!-- الصندوق الرئيسي الكبير -->
+<fieldset style="border: 1px solid #e0e0e0; border-radius: 12px; padding: 24px; max-width: 480px; font-family: sans-serif; box-shadow: 0 4px 12px rgba(0,0,0,0.03); background: #ffffff;">
+  
+  <!-- عنوان الصندوق الرئيسي المدمج في الإطار -->
+  <legend style="font-weight: 600; font-size: 1.15rem; color: #1a1a1a; padding: 0 12px;">Declaration</legend>
+
+  <!-- القسم الأول -->
+  <div style="margin-bottom: 20px;">
+    <label for="signature-name" style="display: block; font-size: 0.9rem; font-weight: 500; color: #4a4a4a; margin-bottom: 8px;">Type your full name as a signature</label>
+    <input type="text" id="signature-name" name="signatureName" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;">
+  </div>
+
+  <!-- القسم الثاني -->
+  <div style="margin-bottom: 20px;">
+    <label for="time-signed" style="display: block; font-size: 0.9rem; font-weight: 500; color: #4a4a4a; margin-bottom: 8px;">Time signed</label>
+    <input type="text" id="time-signed" name="timeSigned" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;">
+  </div>
+
+  <!-- القسم الثالث (صندوق الاختيار) -->
+  <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 24px;">
+    <input type="checkbox" id="confirm-accuracy" name="confirmAccuracy" required style="margin-top: 3px;">
+    <label for="confirm-accuracy" style="font-size: 0.9rem; color: #4a4a4a; line-height: 1.4;">I confirm that the information in this practice return is accurate.</label>
+  </div>
+
+  <!-- القسم الرابع (الأزرار) -->
+  <div style="display: flex; gap: 12px;">
+    <button type="submit" style="flex: 2; padding: 11px; background: #0066cc; color: white; border: none; border-radius: 6px; font-weight: 500; cursor: pointer;">Submit practice return</button>
+    <button type="button" style="flex: 1; padding: 11px; background: #f2f2f2; color: #333; border: 1px solid #dcdcdc; border-radius: 6px; font-weight: 500; cursor: pointer;">Clear form</button>
+  </div>
+
+</fieldset>
+</body>
+<footer>
+
+</footer>
+</html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Taxpayer Portal Project</title>
+    <title>Index</title>
 </head>
 <body>
 
@@ -11,7 +11,7 @@
     
     <p>
         <a href="#">Home</a> | 
-        <a href="#">Tax Filing</a> | 
+        <a href=./tax-forms.html>Tax Filing</a> | 
         <a href="#">Payments</a> | 
         <a href="#">Support</a> | 
         <a href="#">About</a>
@@ -74,12 +74,12 @@
     <h3>Recent Filing Types</h3>
     <p>Filing status for the current period</p>
     
-    <!-- قسم جدول الحالات والتقارير الحالية -->
+   
 <section>
     <h3>Recent Filing Types</h3>
     <p>Filing status for the current period</p>
     
-    <!-- جدول مبني بالـ HTML فقط باستخدام خاصية الحدود والسماكة الافتراضية -->
+   
     <table border="1" cellpadding="8" cellspacing="5" width="100%">
         <thead>
             <tr>
@@ -107,9 +107,49 @@
         </tbody>
     </table>
 </section>
+<br>
 
+<h1>Register a Payment</h1>
+<form action="/orders" method="POST">
 
+  <fieldset>
+    <legend>Personal details</legend>
+
+    <label for="full-name">Full Name</label>
     <br>
+    <input type="text" id="full-name" name="fullName" autocomplete="name" required>
+<br>
+    <label for="order-email">Email</label>
+    <br>
+    <input type="email" id="order-email" name="email" autocomplete="email" required>
+  </fieldset>
+<br>
+  <fieldset>
+
+    <legend>Payment details</legend>
+
+    <label for="order-amount">Amount (OMR)</label>
+    <br>
+    <input type="number" id="order-amount" name="amount" step="0.01" min="0" required>
+    
+    <small>Enter the amount in Omani Rials, up to two decimal places.</small>
+<br>
+<br>
+    <label for="tax-type">Tax Type</label>
+    <br>
+    <input type="text" id="tax-type" name="taxType" required>
+<br>
+  </fieldset>
+
+  <input type="checkbox" id="order-terms" name="terms" required>
+  <label for="order-terms">I confirm the information above is accurate</label>
+<br>
+  <button type="submit">Submit Payment</button>
+  <button type="reset">Clear Form</button>
+
+</form>
+
+<br>
 
     <p>Overall filing completion this quarter:</p>
     <progress value="70" max="100"></progress>
