@@ -3,15 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taxpayer Portal</title>
+  <title>Taxpayer Portal-Index</title>
   
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
 
   <div class="container">
-    
-    
     <header>
       <h1>Taxpayer Portal</h1>
       <p class="subtitle">Online Tax Services</p>
@@ -36,9 +34,12 @@
     </header>
 
    
+
+
     <main class="content-area">
-      
+      <section class="portal">
       <h2>Welcome to the Portal</h2>
+      <hr>
       <p>
         This online system allows registered taxpayers to
         <strong>file returns</strong>,
@@ -53,51 +54,49 @@
         <mark>New users must verify their email before submitting a first return.</mark>
       </p>
       
-      <p>
+      <p class="f">
         Filing types include 
         <abbr title="Value Added Tax">VAT</abbr>, 
         <abbr title="Corporate Income Tax">CIT</abbr>, and 
         <abbr title="Personal Income Tax">PIT</abbr>.
       </p>
-
       <br>
-
       <figure>
         <img src="Figure.svg" alt="Overview of the taxpayer dashboard" width="600">
         <figcaption>Figure 1: Overview of the taxpayer dashboard</figcaption>
       </figure>
-
-      <hr>
-
+       </section>
+      
+      <section>
       <h3>Announcement: VAT Filing Deadline Extended</h3>
-      <p>
+      <hr>
+      <div class="d">
         The deadline for quarterly VAT filing has been extended by two
         weeks to accommodate the recent system maintenance window.
-      </p>
+      </div>
       
-      <blockquote cite="Portal Communications Team">
+      <blockquote cite="Portal Communications Team" class="q">
         All pending VAT submissions will now be accepted until the end of the month without penalty.
       </blockquote>
       
-      <p>Source: <cite>Portal Communications Team</cite></p>
-      <p>Published: <time datetime="2026-07-20">20 July 2026</time></p>
-
+      <div class="s">Source: <cite>Portal Communications Team</cite></div>
+      <div class="p">Published: <time datetime="2026-07-20">20 July 2026</time></div>
+      </section>
       <hr>
-
-    
       <section class="filling-type">
     <h2>Recent Filing Types</h2>
+     <hr>
     <h4>Filing status for the current period</h4>
     
-    <table border="1" cellpadding="8" cellspacing="5" width="100%">
-        <thead>
+    <table class="t" cellpadding="8" cellspacing="5">
+        
             <tr>
                 <th scope="col">Tax Type</th>
                 <th scope="col">Filing Period</th>
                 <th scope="col">Status</th>
             </tr>
-        </thead>
-        <tbody>
+      
+       
             <tr>
                 <th scope="row">VAT</th>
                 <td>Q2 2026</td>
@@ -113,16 +112,26 @@
                 <td>2025 Annual</td>
                 <td>Draft</td>
             </tr>
-        </tbody>
     </table>
+<div class="progress-wrapper">
+    <label for="completion">
+        Overall filing completion this quarter:
+    </label>
+    <progress id="completion" max="100" value="70">70%</progress>
+</div>
+
+<div class="progress-wrapper">
+    <label for="score">Average review score for submitted filings: </label>
+    <progress id="score" max="100" value="100"></progress>
+</div>
 </section>
-<br>
-
+<section>
 <h1>Register a Payment</h1>
-<form action="/orders" method="POST">
+<hr>
+<form action="/orders" method="POST" >
 
-  <fieldset>
-    <legend>Personal details</legend>
+<section class="v">
+  <h4>Personal details</h4>
 
     <label for="full-name">Full Name</label>
     <br>
@@ -132,25 +141,24 @@
     <label for="order-email">Email</label>
     <br>
     <input type="email" id="order-email" name="email" autocomplete="email" required>
-    
-  </fieldset>
-<br>
-  <fieldset>
+ </section>
 
-    <legend>Payment details</legend>
-
+  
+<section class="v">
+  <h4>Payment details</h4>
     <label for="order-amount">Amount (OMR)</label>
     <br>
     <input type="number" id="order-amount" name="amount" step="0.01" min="0" required>
-    
+  
     <small>Enter the amount in Omani Rials, up to two decimal places.</small>
 <br>
 <br>
     <label for="tax-type">Tax Type</label>
     <br>
     <input type="text" id="tax-type" name="taxType" required>
-<br>
-  </fieldset>
+
+</section>
+  
 
   <input type="checkbox" id="order-terms" name="terms" required>
   <label for="order-terms">I confirm the information above is accurate</label>
@@ -159,7 +167,7 @@
   <button type="reset">Clear Form</button>
 
 </form>
-
+</section>
 <br>
 
     <p>Overall filing completion this quarter:</p>
@@ -168,8 +176,9 @@
     <p>Average review score for submitted filings:</p>
     <meter value="8" min="0" max="10"></meter>
 
-    <hr>
 
+
+    <hr>
     <h3>Quick Links</h3>
     <ol>
         <li><a href="#">How to file a VAT return</a></li>
@@ -178,37 +187,35 @@
         <li><a href="#">Contact a support agent</a></li>
     </ol>
 
+
+
     <hr>
-
     <h3>Key Terms</h3>
-
     <dl>
         <dt><strong>VAT</strong></dt>
         <dd>A tax added to most goods and services at the point of sale.</dd>
-
         <br>
-
         <dt><strong>Filing Period</strong></dt>
         <dd>The date range a given return or payment covers.</dd>
     </dl>
-
     <hr>
 
-    <h3>Frequently Asked Questions</h3>
 
+
+    <h3>Frequently Asked Questions</h3>
     <details>
         <summary>What happens if I miss a filing deadline?</summary>
         <p>Late submissions may be subject</p>
     </details>
-
     <br>
-
     <details>
         <summary>Can I edit a submitted return?</summary>
         <p>Yes, you can </p>
     </details>
-
     <hr>
+    <section>
+      
+
 
     <p><small>&copy; <time datetime="2026">2026</time> Taxpayer Portal. All rights reserved.</small></p>
     <p>Support: <a href="mailto:support@example.com">support@example.com</a> | Phone: +968 1234 5678</p>
@@ -217,13 +224,8 @@
         <a href="#">Terms of Use</a> | 
         <a href="#">Contact Us</a>
     </p>
+   
+    </section>
 
 </body>
 </html>
-
-
-
-
-
-
-
