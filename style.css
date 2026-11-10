@@ -314,3 +314,74 @@ meter::-webkit-meter-optimum-value {
     gap: 15px;
     margin-top: 10px;
 }
+
+
+
+
+
+
+
+
+* {
+    --primary-color:rgba(,,,);
+    --name:'jihan';
+}
+body {
+    background: var(--primary-color);
+}
+.container article{
+    border:1px solid red;
+    color:blue;
+}
+ #customId.container.some-article{
+    border:1px solid red;
+    color:blue;
+}
+header.header{
+    color:red;
+}
+#customId{
+    color:red;
+}
+/* لما نستخدم فاصله*/
+#someId, .header, .container, article{
+    color:#000;
+}
+/* > , + */
+ .container > article{
+    color:#000;
+}
+.container + article{
+    color:#000;
+}
+article:hover{
+    background: red;
+}
+input::placeholder{
+    color:red;
+}
+input[type="search"]{
+    color: red;
+}
+/*all*/
+.container.artical > [type="search"] ::placeholder{
+    color: red;
+}
+/*<p></p>*/
+p{
+    font-size: 16px;
+}
+/*class named paragraph*/
+.paragraph{
+    font-size :24px;;
+}
+body p {
+    font-size: 3mm;
+}
+/*ordiring depand*/
+.paragraph{
+    font-size:14!important;
+}
+.paragraph{
+    font-size:14 !important;
+}

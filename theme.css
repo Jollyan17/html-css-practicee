@@ -1,0 +1,23 @@
+
+:root {
+ 
+  --bg-blue: #164e8d;         
+  --btn-blue: #1d61b1;        
+  --btn-active: #154c8b;      
+  --line-color: rgba(255, 255, 255, 0.15); 
+  --text-white: #ffffff;
+  --text-light: #a3c2e6;      
+
+  
+  --text-dark: #333333;
+  --bg-light: #ffffff;
+  --border-color: #dddddd;
+  --zebra-bg: #f9f9f9;       
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+}
+

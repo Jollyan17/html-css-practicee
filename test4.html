@@ -1,0 +1,425 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head> -->
+
+
+<body>
+    <!-- <article class="container">
+        <h1></h1>
+        <div></div>
+    </article> -->
+    <!-- <h1>Taxpayer Portal</h1>
+    <p>Online Tax Services</p>
+    
+    <p>
+        <nav class:sticky-nav>
+        <a href="./home.html">Home</a> | 
+        <a href=./tax-forms.html>Tax Filing</a> | 
+        <a href="#">Payments</a> | 
+        <a href="#">Support</a> | 
+        <a href="#">About</a>
+    </p>
+
+    <p>Search the portal</p>
+    <input type="text" placeholder="e.g. VAT return">
+    <button>Search</button> -->
+     <div class="container">
+        
+        <!-- [خانة 1]: الهيدر والقائمة العلوية -->
+        <header >
+            <h1 >Taxpayer Portal</h1>
+            <p class="subtitle">Online Tax Services</p>
+            <nav class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">Tax Filing</a>
+                <a href="#">Payments</a>
+                <a href="#">Support</a>
+                <a href="#">About</a>
+            </nav>
+
+            <div class="line"></div>
+
+            <div class="search-box">
+                <label for="search">Search the portal</label>
+                <div class="search-input-group">
+                    <input type="text" id="search" placeholder="e.g. VAT return">
+                    <button>Search</button>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <form class="search-form">
+            <label for="search-label">Search the porta</label>
+<div>
+    <input type="text" id="search" placeholder="e.g. VAT return" required>
+    <button type ="submit" class="search-btn">Search</button>
+</div>
+        </form>
+    <hr>
+
+
+
+
+
+
+    <h2>Welcome to the Portal</h2>
+    <p>
+        This online system allows registered taxpayers to
+         <strong>file returns</strong>,
+         <strong>manage payments</strong>, and 
+         <strong>track submissions</strong> online
+          The portal is designed to simplify
+           communication between taxpayers and the tax authority.
+    </p>
+    
+    <p>
+        Use the navigation menu above to explore filing options,
+         review your payment history, or contact support if you need assistance. 
+        <mark>New users must verify their email before submitting a first return.</mark>
+    </p>
+    
+    <p>
+        Filing types include 
+        <abbr title="Value Added Tax">VAT</abbr>, 
+        <abbr title="Corporate Income Tax">CIT</abbr>, and 
+        <abbr title="Personal Income Tax">PIT</abbr>.
+    </p>
+
+    <br>
+
+    <figure>
+        <img src="Figure.svg" alt="Picture" width="600">
+        <figcaption>Figure 1: Overview of the taxpayer dashboard</figcaption>
+    </figure>
+
+    <hr>
+
+    <h3>Announcement: VAT Filing Deadline Extended</h3>
+    <p>
+        The deadline for quarterly VAT filing has been extended by two
+         weeks to accommodate the recent system maintenance window.
+    </p>
+    
+
+    <blockquote cite="Portal Communications Team">
+        All pending VAT submissions will now be accepted until the end of the month without penalty.
+    </blockquote>
+    
+    <p>Source: <cite>Portal Communications Team</cite></p>
+    <p>Published: <time datetime="2026-07-20">20 July 2026</time></p>
+
+    <hr>
+
+    <h3>Recent Filing Types</h3>
+    <p>Filing status for the current period</p>
+    
+   
+<section class="filling-type">
+    <h2>Recent Filing Types</h2>
+    <h4>Filing status for the current period</h4>
+    
+    <table border="1" cellpadding="8" cellspacing="5" width="100%">
+        <thead>
+            <tr>
+                <th scope="col">Tax Type</th>
+                <th scope="col">Filing Period</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">VAT</th>
+                <td>Q2 2026</td>
+                <td>Submitted</td>
+            </tr>
+            <tr>
+                <th scope="row">CIT</th>
+                <td>2025 Annual</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <th scope="row">PIT</th>
+                <td>2025 Annual</td>
+                <td>Draft</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<br>
+
+<h1>Register a Payment</h1>
+<form action="/orders" method="POST">
+
+  <fieldset>
+    <legend>Personal details</legend>
+
+    <label for="full-name">Full Name</label>
+    <br>
+    <input type="text" id="full-name" name="fullName" autocomplete="name" required>
+<br>
+
+    <label for="order-email">Email</label>
+    <br>
+    <input type="email" id="order-email" name="email" autocomplete="email" required>
+    
+  </fieldset>
+<br>
+  <fieldset>
+
+    <legend>Payment details</legend>
+
+    <label for="order-amount">Amount (OMR)</label>
+    <br>
+    <input type="number" id="order-amount" name="amount" step="0.01" min="0" required>
+    
+    <small>Enter the amount in Omani Rials, up to two decimal places.</small>
+<br>
+<br>
+    <label for="tax-type">Tax Type</label>
+    <br>
+    <input type="text" id="tax-type" name="taxType" required>
+<br>
+  </fieldset>
+
+  <input type="checkbox" id="order-terms" name="terms" required>
+  <label for="order-terms">I confirm the information above is accurate</label>
+<br>
+  <button type="submit">Submit Payment</button>
+  <button type="reset">Clear Form</button>
+
+</form>
+
+<br>
+
+    <p>Overall filing completion this quarter:</p>
+    <progress value="70" max="100"></progress>
+    
+    <p>Average review score for submitted filings:</p>
+    <meter value="8" min="0" max="10"></meter>
+
+    <hr>
+
+    <h3>Quick Links</h3>
+    <ol>
+        <li><a href="#">How to file a VAT return</a></li>
+        <li><a href="#">Payment methods accepted</a></li>
+        <li><a href="#">Download tax certificates</a></li>
+        <li><a href="#">Contact a support agent</a></li>
+    </ol>
+
+    <hr>
+
+    <h3>Key Terms</h3>
+
+    <dl>
+        <dt><strong>VAT</strong></dt>
+        <dd>A tax added to most goods and services at the point of sale.</dd>
+
+        <br>
+
+        <dt><strong>Filing Period</strong></dt>
+        <dd>The date range a given return or payment covers.</dd>
+    </dl>
+
+    <hr>
+
+    <h3>Frequently Asked Questions</h3>
+
+    <details>
+        <summary>What happens if I miss a filing deadline?</summary>
+        <p>Late submissions may be subject</p>
+    </details>
+
+    <br>
+
+    <details>
+        <summary>Can I edit a submitted return?</summary>
+        <p>Yes, you can </p>
+    </details>
+
+    <hr>
+
+    <p><small>&copy; <time datetime="2026">2026</time> Taxpayer Portal. All rights reserved.</small></p>
+    <p>Support: <a href="mailto:support@example.com">support@example.com</a> | Phone: +968 1234 5678</p>
+    <p>
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Use</a> | 
+        <a href="#">Contact Us</a>
+    </p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!--
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&display=swap');
+*{
+    font-family: "Roboto" ,sans-serif;
+
+}
+body, h1, h2,h3,h4,h5,h6,p{
+    font-size:"Roboto";
+    margin: 0;
+    padding:0;
+}
+.container{
+background-color:aliceblue;
+margin:0 auto;
+max-width: 900px;
+padding: 0 16px
+/* border:1px soild red;
+border-width: 1px;
+border-right-width:2px ;
+margin:0 auto 0 auto;
+padding:0 auto 16px auto; */
+}
+.header {
+    padding-top: 24px 24px 16px;
+    border-radius:0 0 8px 8px ;
+    background-color: blue;
+    z-index: 1;
+}
+h1{
+    font-weight: 700px;
+    font-size:32px;
+    letter-spacing: 0.5px;
+    color:#FFF;
+    margin: 5PX 0 10PX 0;
+
+}
+.subtitle{
+    font-size: 16PX;
+    font-style: italic;
+    color: #C8D8EF;
+
+}
+img{
+    width:100%;
+
+}
+.header nav{
+    margin-top:24;
+}
+
+.header a , .sticky-nav{
+    font-size:14px;
+    padding:6px 12px;
+    background-color: #C8D8EF;
+    border-radius:after#FFF;
+    text-decoration:none;
+}
+.header a:hover{
+    background-color: darkblue;
+}
+.line{
+    height: 1px;
+    background-color: #C8D8EF;
+
+}
+.search-label{
+    color:#C8D8EF;
+    
+    
+}
+.search-input{
+    margin-top: 32px;
+    padding:10px 12px;
+    border: none}
+.search-btn{
+    padding: 10px 24px;
+    border:none;
+     color:white;
+      background: none;;
+}
+.search-form 
+{
+   e; 
+}
+
+
+section{
+background-color: white;
+border:1px;
+padding:24px;
+margin-top: 24px;
+}
+section h2 {
+    color: #1A4E8A;
+    font-size: 22px;
+    border-bottom: 2px soild #D0DCE8;
+    padding-bottom:15px;
+}
+
+.{
+    color:
+    background-color: #FFFFFF;
+    width: 90px;;
+    font-style:italic;
+    font-size:14px;
+    margin-top:16px;
+
+}
+.navigation{
+    position: sticky;
+}
+.announcment-descr{
+    margin-top: 20px;
+
+}
+.announcment blockquote{
+
+}
+
+.sticky-nav{
+    display:block;
+    top:0;
+    background-color: ;
+    justify-content: space-between;
+}
+.announcment-date{
+    margin-top:20px;
+    font-size:14px;
+}
+.filling-type table{
+width:100% ;
+}
+.filling-type th{
+background-color: #1A4E8A;
+color:#FFF;
+text-align: left;
+}
+.filling-type td{
+border:1px soild #D0DCF8;
+}
+.filling-type tr:nth-child(even){
+    background-color: #F0F5FF;
+}
+.progress-wrapper{
+    display: inline-block;
+    width: 49%;
+    margin-top:10px;
+}
+
+
+/*li:nth-child(2):hover {
+background-color: yellow; }
+
+li:nth-child(2):active {
+background-color: yellow; }
+خاصية ممتازة بحثي عنها 
+تساعد كثير في التصميم 
+في معادلا في اقسام 
+ -->
