@@ -25,11 +25,14 @@
       <div class="line"></div>
 
       <div class="search-box">
+
         <label for="search">Search the portal</label>
+
         <div class="search-input-group">
           <input type="text" id="search" placeholder="e.g. VAT return">
           <button>Search</button>
         </div>
+
       </div>
     </header>
 
@@ -83,6 +86,9 @@
       <div class="p">Published: <time datetime="2026-07-20">20 July 2026</time></div>
       </section>
       <hr>
+
+
+
       <section class="filling-type">
     <h2>Recent Filing Types</h2>
      <hr>
@@ -125,106 +131,130 @@
     <progress id="score" max="100" value="100"></progress>
 </div>
 </section>
-<section>
-<h1>Register a Payment</h1>
-<hr>
-<form action="/orders" method="POST" >
-
-<section class="v">
-  <h4>Personal details</h4>
-
-    <label for="full-name">Full Name</label>
-    <br>
-    <input type="text" id="full-name" name="fullName" autocomplete="name" required>
-<br>
-
-    <label for="order-email">Email</label>
-    <br>
-    <input type="email" id="order-email" name="email" autocomplete="email" required>
- </section>
-
-  
-<section class="v">
-  <h4>Payment details</h4>
-    <label for="order-amount">Amount (OMR)</label>
-    <br>
-    <input type="number" id="order-amount" name="amount" step="0.01" min="0" required>
-  
-    <small>Enter the amount in Omani Rials, up to two decimal places.</small>
-<br>
-<br>
-    <label for="tax-type">Tax Type</label>
-    <br>
-    <input type="text" id="tax-type" name="taxType" required>
-
-</section>
-  
-
-  <input type="checkbox" id="order-terms" name="terms" required>
-  <label for="order-terms">I confirm the information above is accurate</label>
-<br>
-  <button type="submit">Submit Payment</button>
-  <button type="reset">Clear Form</button>
-
-</form>
-</section>
-<br>
-
-    <p>Overall filing completion this quarter:</p>
-    <progress value="70" max="100"></progress>
-    
-    <p>Average review score for submitted filings:</p>
-    <meter value="8" min="0" max="10"></meter>
 
 
 
-    <hr>
-    <h3>Quick Links</h3>
-    <ol>
-        <li><a href="#">How to file a VAT return</a></li>
-        <li><a href="#">Payment methods accepted</a></li>
-        <li><a href="#">Download tax certificates</a></li>
-        <li><a href="#">Contact a support agent</a></li>
-    </ol>
 
+<section class="register-payment">
+  <div class="form-card">
+    <div class="form-header">
 
+      <h2>Register a Payment</h2>
 
-    <hr>
-    <h3>Key Terms</h3>
-    <dl>
-        <dt><strong>VAT</strong></dt>
-        <dd>A tax added to most goods and services at the point of sale.</dd>
-        <br>
-        <dt><strong>Filing Period</strong></dt>
-        <dd>The date range a given return or payment covers.</dd>
-    </dl>
-    <hr>
-
-
-
-    <h3>Frequently Asked Questions</h3>
-    <details>
-        <summary>What happens if I miss a filing deadline?</summary>
-        <p>Late submissions may be subject</p>
-    </details>
-    <br>
-    <details>
-        <summary>Can I edit a submitted return?</summary>
-        <p>Yes, you can </p>
-    </details>
-    <hr>
-    <section>
+      <span class="secure-label">Secure</span>
       
+    </div>
+
+    <form>
+      <!-- Personal details -->
+       <section class="v">
+      <fieldset class="fieldset-set">
+        <legend>Personal details</legend>
+
+        <label for="full-name" class="required">Full Name</label>
+<br>
+        <input type="text" id="full-name" name="fullName" autocomplete="name" required>
+<br>
+        <label for="order-email" class="required">Email</label>
+<br>
+        <input type="email" id="order-email" name="email" autocomplete="email" required>
+      </fieldset>
+      </section>
+
+      <!-- Payment details -->
+       <section class="v">
+      <fieldset class="fieldset-set">
+        <legend>Payment details</legend>
+
+        <label for="order-amount" class="required">Amount (OMR)</label>
+<br>       
+        <input type="number" id="order-amount" name="amount" step="0.01" min="0" required>
+<br>
+        <small class="helper-text">Enter the amount in Omani Rials, up to two decimal places.</small>
+<br>
+<br>
+        <label for="tax-type" class="required">Tax Type</label>
+<br>
+        <input type="text" id="tax-type" name="taxType" required>
+      </fieldset>
+      </section>
+
+      <!-- Confirmation -->
+      <div class="terms">
+        <input type="checkbox" id="order-terms" name="terms" required>
+        <label for="order-terms" class="ss">I confirm the information above is accurate</label>
+      </div>
+
+      <!-- Buttons -->
+      <div class="form-actions">
+        <button type="submit" class="submit-t" disabled>Submit Payment</button>
+        <button type="reset" class="clear-layout">Clear Form</button>
+      </div>
+
+    </form>
+  </div>
+</section>
+<br>
+  
+
+<section class="quick">
+  <!-- Quick Links -->
+  <h3 >Quick Links</h3>
+
+  <ul class="quick-links">
+    <li><a href="/vat/how-to-file" class="quick-link">How to file a VAT return</a></li>
+
+    <li><a href="/payment/method" class="quick-link">Payment methods accepted</a></li>
+
+    <li><a href="#" class="quick-link">Download tax certificates</a></li>
+
+    <li><a href="#" class="quick-link">Contact a support agent</a></li>
+  </ul>
 
 
-    <p><small>&copy; <time datetime="2026">2026</time> Taxpayer Portal. All rights reserved.</small></p>
-    <p>Support: <a href="mailto:support@example.com">support@example.com</a> | Phone: +968 1234 5678</p>
-    <p>
+  <!-- Key Terms -->
+  <h3>Key Terms</h3>
+
+  <dl class="key-terms">
+
+    <dt>VAT</dt>
+    <dd>A tax added to most goods and services at the point of sale.</dd>
+
+    <dt>Filing Period</dt>
+    <dd>The date range a given return or payment covers.</dd>
+
+  </dl>
+
+  <!-- FAQ -->
+  <h3 >Frequently Asked Questions</h3>
+
+  <div class="faq-list">
+
+    <div class="faq-card">
+      <button class="faq-question">What happens if I miss a filing deadline?</button>
+    </div>
+
+
+    <div class="faq-card">
+      <button class="faq-question">Can I edit a submitted return?</button>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="foooter">
+  
+<p ><small>&copy; <time datetime="2026">2026</time> Taxpayer Portal. All rights reserved.</small></p>
+    <p >Support: <a href="mailto:support@example.com">support@example.com</a> | Phone: +968 1234 5678</p>
+    <p >
         <a href="#">Privacy Policy</a> | 
-        <a href="#">Terms of Use</a> | 
+        <a  href="#">Terms of Use</a> | 
         <a href="#">Contact Us</a>
     </p>
-   
+  
+</section>
+    
     </section>
 
 </body>
